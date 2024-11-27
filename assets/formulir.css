@@ -1,0 +1,136 @@
+/* general reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 500px; /* Sesuaikan lebar form */
+  padding: 20px;
+  background-color: #b3e5fc; /* Warna biru muda untuk latar belakang */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Title and form header */
+.form-title {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Styling for the back button */
+.back-button {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 8px 16px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration: none;
+  max-width: 150px;
+  text-align: center;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.back-button:hover {
+  background-color: #555;
+  transform: scale(1.05);
+}
+
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Label styling */
+label {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px; /* Penyesuaian margin bawah */
+}
+
+/* Input field styling */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #fff; /* Latar belakang input putih */
+}
+
+/* Styling for radio buttons */
+.radio-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+  justify-content: space-around; /* Pengaturan jarak radio button */
+}
+
+.radio-group input[type="radio"] {
+  margin-right: 5px;
+}
+
+/* Styling for textarea */
+textarea {
+  height: 100px; /* Sesuaikan tinggi sesuai gambar */
+  resize: vertical;
+}
+
+/* Submit button styling */
+button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #00e5ff; /* Warna biru terang */
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #00b0ff;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .container {
+    padding: 15px;
+  }
+
+  .form-title {
+    font-size: 1.5rem;
+  }
+
+  .radio-group {
+    flex-direction: column;
+  }
+
+  button[type="submit"] {
+    font-size: 1.1rem;
+  }
+}
